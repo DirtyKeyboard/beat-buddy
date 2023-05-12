@@ -10,7 +10,6 @@ export default defineConfig({
         target: 'https://beat-buddy-api.onrender.com',
         changeOrigin: true,
         secure: false,
-        rewrite: path => path.replace(/^\/api/, '')
       }
     }
   }
