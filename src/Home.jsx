@@ -9,7 +9,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get('/api/check_session');
+            const response = await axios.get('https://beat-buddy-api.onrender.com/check_session');
             if (response.status === 200)
                 setLogged(response.data)
         }
